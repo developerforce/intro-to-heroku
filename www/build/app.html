@@ -1,0 +1,35 @@
+<ion-menu [content]="content">
+
+  <img src="images/logo.png" style="width: 100px;margin-left:84px"/>
+
+  <ion-content>
+    <ion-list>
+      <ion-list-header>Home Search</ion-list-header>
+      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
+        <ion-icon item-left name="{{p.icon}}"></ion-icon>
+        {{p.title}}
+      </button>
+      <ion-list-header>Mortgage</ion-list-header>
+      <button menuClose ion-item >
+        <ion-icon item-left name="checkbox"></ion-icon>
+        Get Pre-Approved
+      </button>
+      <button menuClose ion-item >
+        <ion-icon item-left name="cart"></ion-icon>
+        Shop Rates
+      </button>
+      <ion-list-header>Account</ion-list-header>
+      <button menuClose ion-item >
+        <ion-icon item-left name="person"></ion-icon>
+        Profile
+      </button>
+      <button menuClose ion-item >
+        <ion-icon item-left name="settings"></ion-icon>
+        Settings
+      </button>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav id="nav" [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
