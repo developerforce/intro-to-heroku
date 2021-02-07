@@ -4,7 +4,7 @@
 
   <ion-content>
     <ion-list>
-      <ion-list-header>Home Search</ion-list-header>
+      <ion-list-header>Home Search:</ion-list-header>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
         <ion-icon item-left name="{{p.icon}}"></ion-icon>
         {{p.title}}
@@ -17,6 +17,10 @@
       <button menuClose ion-item >
         <ion-icon item-left name="cart"></ion-icon>
         Shop Rates
+      </button>
+      <button menuClose ion-item >
+        <ion-icon item-left name="calculator"></ion-icon>
+        Mortgage Calculator
       </button>
       <ion-list-header>Account</ion-list-header>
       <button menuClose ion-item >
