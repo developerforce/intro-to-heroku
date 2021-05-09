@@ -5,7 +5,7 @@
     "app-cloud"
   ],
   "repository":  "https://github.com/Harishdwivedi001/intro-to-heroku", 
-  "addons": [
+  "addons": [ 
     "heroku-postgresql"
   ]
 }
