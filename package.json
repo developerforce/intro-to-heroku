@@ -9,6 +9,7 @@
     "postinstall": "gulp build"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
     "nodemon": "latest"
   },
   "dependencies": {
@@ -30,7 +31,6 @@
     "body-parser": "1.9.2",
     "pg": "4.5.5",
     "del": "2.2.0",
-    "gulp": "3.9.1",
     "gulp-watch": "4.3.5",
     "ionic-gulp-browserify-es2015": "1.1.0",
     "ionic-gulp-fonts-copy": "1.0.0",
@@ -53,5 +53,18 @@
       "version": "3.9.2",
       "locator": "ios@3.9.2"
     }
-  ]
+  ],
+  "description": "DreamHouse Web App\r ------------------",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoodFaithParadigm8/intro-to-heroku.git"
+  },
+  "author": "Jason Sprouse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GoodFaithParadigm8/intro-to-heroku/issues"
+  },
+  "homepage": "https://github.com/GoodFaithParadigm8/intro-to-heroku#readme"
 }

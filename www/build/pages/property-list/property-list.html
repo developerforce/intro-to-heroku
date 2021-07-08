@@ -1,0 +1,18 @@
+<ion-navbar primary *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Properties</ion-title>
+</ion-navbar>
+
+<ion-content>
+    <ion-list>
+        <button ion-item *ngFor="let property of properties" (click)="itemTapped($event, property)">
+            <ion-thumbnail item-left>
+                <img src="{{property.thumbnail}}"/>
+            </ion-thumbnail>
+            <h2>{{property.title}}</h2>
+            <p>{{property.city}}, {{property.state}} ∙ {{property.priceFormatted}}</p>
+        </button>
+    </ion-list>
+</ion-content>
